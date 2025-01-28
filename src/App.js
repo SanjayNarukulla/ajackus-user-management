@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { UserList } from "./components/UserList";
-import { UserForm } from "./components/UserForm";
-import ErrorBoundary from "./components/ErrorBoundary";
+import { UserList } from "./components/UserList/UserList";
+import { UserForm } from "./components/UserForm/UserForm";
+import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
 import "./App.css";
 
 const itemsPerPage = 5; // Number of users to display per page
@@ -111,7 +111,9 @@ function App() {
         </div>
 
         {loading ? (
-          <div>Loading...</div>
+          <div className="loading-container">
+            <div className="spinner"></div>
+          </div>
         ) : error ? (
           <div className="error-message">
             <p>{error}</p>
