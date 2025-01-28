@@ -1,4 +1,4 @@
-# User Management App
+# ajackus-user-management
 
 A simple React-based User Management Application where users can add, edit, delete, and search for users. The app is designed to manage a list of users fetched from a public API and supports pagination for user convenience.
 
@@ -29,7 +29,7 @@ git clone https://github.com/yourusername/user-management-app.git
 
 2. Navigate to the project directory:
 ```bash
-cd user-management-app
+cd ajackus-user-management
 ```
 
 3. Install the dependencies:
@@ -56,8 +56,12 @@ npm start
     /UserForm
       UserForm.css    # Styling for the UserForm component
       UserForm.js     # Handles the form for adding and editing users
-    UserList.js       # Displays the list of users
-    ErrorBoundary.js  # Catches JavaScript errors in components
+    /UserList
+      UserList.js     # Displays the list of users
+      UserList.css    # Styling for the UserList component
+    /ErrorBoundary  
+      ErrorBoundary.js # Catches JavaScript errors in components
+      ErrorBoundary.css # Styling for the ErrorBoundary component
   App.js             # Main app component
   App.css            # Global and component-specific styling
   index.js           # Entry point for the app
