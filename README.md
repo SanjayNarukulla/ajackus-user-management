@@ -24,7 +24,7 @@ A simple React-based User Management Application where users can add, edit, dele
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/user-management-app.git
+[git clone https://github.com/yourusername/user-management-app.git](https://github.com/SanjayNarukulla/ajackus-user-management.git)
 ```
 
 2. Navigate to the project directory:
