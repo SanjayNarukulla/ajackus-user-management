@@ -1,13 +1,15 @@
-/* Error Boundary Styles */
 .error-boundary {
   text-align: center;
   padding: 20px;
-  font-size: 1.2rem;
-  color: #e53e3e;
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
 .error-boundary h2 {
-  color: #e53e3e;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
 }

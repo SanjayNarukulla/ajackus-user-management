@@ -9,42 +9,47 @@
 body {
   background-color: #f4f7fc;
   color: #333;
+  line-height: 1.6;
 }
 
 /* Main Container */
 .app-container {
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   margin: 50px auto;
   padding: 20px;
   border-radius: 10px;
   background: linear-gradient(145deg, #ffffff, #e6e9ef);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* Heading */
 h1 {
   text-align: center;
-  color: #333;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 20px;
   color: #1d1d1d;
+  margin-bottom: 20px;
 }
 
-/* Add New User Button */
-.add-user-btn {
-  display: block;
-  margin: 20px auto;
+/* Buttons (Shared Styles) */
+button {
+  display: inline-block;
   padding: 12px 30px;
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
-  background-color: #007bff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add User Button */
+.add-user-btn {
+  display: block;
+  margin: 20px auto;
+  color: #fff;
+  background-color: #007bff;
 }
 
 .add-user-btn:hover {
@@ -55,7 +60,7 @@ h1 {
 
 /* Search Bar */
 .search-container {
-  margin: 20px 0;
+  margin: 20px auto;
   text-align: center;
 }
 
@@ -79,6 +84,7 @@ h1 {
   margin-top: 20px;
 }
 
+/* Pagination */
 .pagination {
   display: flex;
   justify-content: center;
@@ -91,11 +97,7 @@ h1 {
   font-weight: 600;
   color: #fff;
   background-color: #007bff;
-  border: none;
-  border-radius: 5px;
   margin: 0 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pagination-btn:disabled {
@@ -109,74 +111,38 @@ h1 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Loading State */
-.loading {
-  text-align: center;
-  font-size: 18px;
-  color: #555;
-  margin-top: 20px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .app-container {
-    padding: 20px 15px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  .add-user-btn {
-    font-size: 14px;
-    padding: 10px 25px;
-  }
-
-  .search-input {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .pagination-btn {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
-}
-
-
-/* App.css */
+/* Error Message */
 .error-message {
   color: red;
   font-size: 1.2rem;
+  text-align: center;
   margin-top: 20px;
 }
 
+/* Retry Button */
 .retry-btn {
-  margin-top: 10px;
-  padding: 10px;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
   background-color: #ff5b5b;
   color: white;
-  border: none;
-  cursor: pointer;
 }
 
 .retry-btn:hover {
   background-color: #d43f3f;
 }
 
-
-/* Loading Spinner styles */
+/* Loading Spinner */
 .loading-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f4f7fc;
 }
 
 .spinner {
-  border: 6px solid #f3f3f3; /* Light background */
-  border-top: 6px solid #3498db; /* Blue color for the spinner */
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -186,4 +152,25 @@ h1 {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .search-input, .pagination-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .add-user-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }
